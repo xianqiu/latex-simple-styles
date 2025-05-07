@@ -8,4 +8,5 @@
 *.xdv
 *.fls
 *.fdb_latexmk
-/*.pdf
+*.pdf
+!previews/*.pdf
