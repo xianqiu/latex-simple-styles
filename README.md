@@ -8,7 +8,7 @@ This repository contains the folowing latex styles that I use for my documents.
 ## Features
 
 * Easy to use and modify.
-* Support both Chinese and English.
+* Support both Chinese and English. Font files are included in the repository.
 * Support multiple operating systems: Windows/MacOS/Linux.
 
 ## Previews
