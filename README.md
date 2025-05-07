@@ -13,7 +13,7 @@ This repository contains the folowing latex styles that I use for my documents.
 
 ## Previews
 
-### `simplecv`
+### simplecv
 
 <img src="https://github.com/xianqiu/latex-simple-styles/blob/master/previews/simplecv.jpg" width="300" />
 
@@ -30,4 +30,4 @@ Then, you can clone or download this repository and use the style in your docume
 ```bash
 git clone https://github.com/xianqiu/latex-simple-styles.git
 ```
-For usage details, please refer to the example `tex` files, e.g. [example-cv-en.tex](https://github.com/xianqiu/latex-simple-styles/blob/master/example-cv-en.tex).
+For details, please refer to the example `tex` files, e.g. [example-cv-en.tex](https://github.com/xianqiu/latex-simple-styles/blob/master/example-cv-en.tex).
