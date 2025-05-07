@@ -13,7 +13,7 @@ This repository contains the folowing latex styles that I use for my documents.
 
 ## Previews
 
-`simplecv`
+### `simplecv`
 
 <img src="https://github.com/xianqiu/latex-simple-styles/blob/master/previews/simplecv.jpg" width="300" />
 
