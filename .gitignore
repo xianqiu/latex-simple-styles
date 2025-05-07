@@ -5,3 +5,6 @@
 *.synctex.gz
 *.aux
 *.bbl
+*.xdv
+*.fls
+*.fdb_latexmk

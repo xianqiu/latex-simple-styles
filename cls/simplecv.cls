@@ -10,39 +10,30 @@
 \RequirePackage[left=1.5cm,top=1cm,right=1.5cm,bottom=2.5cm,nohead,nofoot]{geometry}  
 
 % Chinese font
-\usepackage{xeCJK}
+\RequirePackage{xeCJK}
 \setCJKmainfont{NotoSansSC}[
-	Path                   =    ./cls/fonts/  ,
-	Extension         =    .ttf  ,
-	UprightFont     = *-Light  ,
-	BoldFont           =    *-Medium 
+	Path            =  ./cls/fonts/  ,
+	Extension       =  .ttf  ,
+	UprightFont     =  *-Light  ,
+	BoldFont        =  *-Medium 
 ]
 
 % English font
 \RequirePackage{fontspec}
 \setmainfont{OpenSans}[
-	Path                  =      ./cls/fonts/  ,
-	Extension        =    .ttf  ,
-	UprightFont    =    *-Light  ,
-	BoldFont          =    *-Medium  ,
-	ItalicFont          =   *-LightItalic  ,
+	Path            =  ./cls/fonts/  ,
+	Extension       =  .ttf  ,
+	UprightFont     =  *-Light  ,
+	BoldFont        =  *-Medium  ,
+	ItalicFont      =  *-LightItalic  ,
 	BoldItalicFont  =  *-MediumItalic
 ]
-
-
-\RequirePackage{hyperref}
-\RequirePackage{ifthen}
-\RequirePackage{parskip}
-
-\RequirePackage{eurosym,pifont} % symbols         
-\RequirePackage{tikz}
 
 % Colors
 \RequirePackage{xcolor}
 \definecolor{title}{RGB}{0,80,80}
 \definecolor{subtitle}{RGB}{80,80,80}
 \definecolor{section}{RGB}{0,100,100}
-
 
 % Header
 % 	- Name
@@ -52,7 +43,8 @@
 \newcommand{\name}[1]{\newcommand\@name{#1}}
 \newcommand{\position}[1]{\newcommand\@position{#1}}
 \newcommand{\contact}[1]{\newcommand\@contact{#1}}
-                                                         
+
+\RequirePackage{ifthen}
 \renewcommand{\maketitle}{%
   {\huge\bfseries\color{title}\@name}\\[12pt]
   \ifdefined\@position
@@ -82,7 +74,9 @@
   } 
 }
 
-% item row spacing
+% Paragraph spacing
+\RequirePackage{parskip}
+% Item row spacing
 \renewcommand{\arraystretch}{1.2}
 
 
