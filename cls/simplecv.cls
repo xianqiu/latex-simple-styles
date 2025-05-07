@@ -78,6 +78,3 @@
 \RequirePackage{parskip}
 % Item row spacing
 \renewcommand{\arraystretch}{1.2}
-
-
-
