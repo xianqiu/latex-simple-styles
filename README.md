@@ -12,10 +12,14 @@ This repository contains the folowing latex styles that I use for my documents.
 * Support multiple operating systems: Windows/MacOS/Linux.
 
 ## Previews
-* `simplecv`
-    <img src="https://github.com/xianqiu/latex-simple-styles/blob/master/previews/simplecv.jpg" width="300" />
-    * Chinese: [example-simplecv-zh.pdf](https://github.com/xianqiu/latex-simple-styles/blob/master/previews/example-cv-zh.pdf) 
-    * English: [example-simplecv-en.pdf](https://github.com/xianqiu/latex-simple-styles/blob/master/previews/example-cv-en.pdf)
+
+`simplecv`
+
+<img src="https://github.com/xianqiu/latex-simple-styles/blob/master/previews/simplecv.jpg" width="300" />
+
+* Chinese: [example-simplecv-zh.pdf](https://github.com/xianqiu/latex-simple-styles/blob/master/previews/example-cv-zh.pdf) 
+
+* English: [example-simplecv-en.pdf](https://github.com/xianqiu/latex-simple-styles/blob/master/previews/example-cv-en.pdf)
 
 ## Usage
 
