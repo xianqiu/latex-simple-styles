@@ -1,1 +1,1 @@
-# Latex-theme-ink
+# Latex Simple Styles
