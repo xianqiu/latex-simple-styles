@@ -34,8 +34,6 @@ This repository contains the following latex classes that I use for my documents
 
 * [example-report.pdf](https://github.com/xianqiu/latex-simple-styles/blob/master/previews/example-report.pdf)
 
-### simplereport
-
 ## Usage
 
 To use this style, you need to have a latex distribution installed, with compiler `xelatex`. 
