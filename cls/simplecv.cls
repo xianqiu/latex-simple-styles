@@ -1,3 +1,4 @@
+\NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{simplecv}
 
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}

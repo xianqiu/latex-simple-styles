@@ -1,9 +1,9 @@
 # Latex Simple Styles
 
-This repository contains the folowing latex styles that I use for my documents.
+This repository contains the following latex classes that I use for my documents.
 
-* `simplecv`: CV style.
-* `simplebeamer`: beamer style. 
+* `simplecv`: CV class.
+* `simplebeamer`: beamer class. 
 
 ## Features
 
