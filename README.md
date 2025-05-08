@@ -38,4 +38,6 @@ Then, you can clone or download this repository and use the style in your docume
 ```bash
 git clone https://github.com/xianqiu/latex-simple-styles.git
 ```
-For details, please refer to the example `tex` files, e.g. [example-cv-en.tex](https://github.com/xianqiu/latex-simple-styles/blob/master/example-cv-en.tex).
+For details, please refer to the example `tex` files, e.g. 
+* [example-cv-en.tex](https://github.com/xianqiu/latex-simple-styles/blob/master/example-cv-en.tex)
+* [example-beamer.tex](https://github.com/xianqiu/latex-simple-styles/blob/master/example-beamer.tex)
