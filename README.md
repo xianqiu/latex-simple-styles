@@ -21,6 +21,14 @@ This repository contains the following latex classes that I use for my documents
 
 * English: [example-simplecv-en.pdf](https://github.com/xianqiu/latex-simple-styles/blob/master/previews/example-cv-en.pdf)
 
+### simplebeamer
+
+<img src="https://github.com/xianqiu/latex-simple-styles/blob/master/previews/simplebeamer1.jpg" width="300" />
+
+<img src="https://github.com/xianqiu/latex-simple-styles/blob/master/previews/simplebeamer2.jpg" width="300" />
+
+* [example-simplebeamer.pdf](https://github.com/xianqiu/latex-simple-styles/blob/master/previews/example-simplebeamer.pdf)
+
 ## Usage
 
 To use this style, you need to have a latex distribution installed, with compiler `xelatex`. 
