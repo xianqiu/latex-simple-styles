@@ -13,3 +13,7 @@
 *.snm
 *.toc
 *.nav
+*.vrb
+*.synctex
+*.blg
+*.bcf
