@@ -45,3 +45,23 @@
 
 % Table row spacing
 \renewcommand{\arraystretch}{1.5}
+
+% Code styles
+\RequirePackage{listings}
+\lstset{     
+    basicstyle=\ttfamily,     
+    keywordstyle=\color{blue}, 
+    commentstyle=\color{gray}, 
+    stringstyle=\color{red},
+	showstringspaces=false,   
+    numbers=left,              
+    numberstyle=\tiny\color{gray}, 
+    stepnumber=1,             
+    numbersep=10pt,           
+    frame=single,
+	captionpos=b,
+	columns=fullflexible,
+	breaklines=true,
+	xleftmargin=2em, 
+ 	xrightmargin=2em             
+}

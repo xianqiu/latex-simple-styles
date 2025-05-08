@@ -1,0 +1,290 @@
+\documentclass{cls/simplereport}
+
+
+\begin{document}
+\title{A Simple \LaTeX~ Report Template}
+\author{xianqiu}
+\date{2024-05-08}
+\maketitle
+	
+\section{列表样式}
+	
+什么是 TikZ/PGF？TikZ和PGF是一种用在 TeX 上的 CLI 绘图工具。
+
+\begin{enumerate}
+	\item TikZ 通过类编程的思想实现绘图，这种方式往往能够生成精确控制的函数图，常见的有PostScript、PGF、Asymptote、PSTricks等。
+	\item Tikz 基于 PGF，PGF的全名是“portable graphics format”。
+	\item TikZ的命名很有趣，采用的是递归式的取名：“TikZ ist kein Zeichenprogramm”(TikZ is not a drawing program)。类似的取名最出名的恐怕就是GNU（GNU is Not Unix）了。
+\end{enumerate}
+
+什么是 Beamer？Beamer 是一个用于制作演示文稿的 LaTeX 宏包，它可以将 LaTeX 文档转换为 PDF 格式的幻灯片。
+Beamer 的主要特点和功能如下：
+
+\begin{itemize}
+	\item 用户只需了解基本的 \LaTeX 语法，就能快速上手 Beamer。
+	\item 通过简单的命令，用户可以插入图像，创建项目符号列表，调整字体样式等，从而高效地创建高质量的幻灯片。
+	\begin{itemize}
+		\item 支持多种主题和样式，用户可以根据自己的喜好选择合适的主题。
+		\item 支持多种语言，包括英语、德语、法语、西班牙语等。
+		\item 支持多种格式，包括 PDF、HTML、LaTeX 等。
+	\end{itemize}
+	\item 无论是科研报告、教学课件，还是商务演示，Beamer 都是一个理想的选择。
+	\end{itemize}
+
+\subsection{示意图}
+
+\begin{figure}[ht]
+	\centering
+	\begin{tikzpicture}
+		\node[scale=0.75] at (0,  0) {\input{example-report-gfx/eg_look}};
+	\end{tikzpicture}
+\end{figure}
+
+\section{表格}
+
+\renewcommand{\figurename}{图} % figure prefix
+\renewcommand{\tablename}{表} % table prefix
+\renewcommand{\lstlistingname}{列表} % code prefix
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{c|c|p{8cm}}
+		\toprule
+		\textbf{类别} & \textbf{玩法数量} & \textbf{明细} \\
+		\midrule
+		单商品 & 8 & 积分商品、秒杀、付费会员专享价、免费试用、限时购(限时限量购)、定金购、塞购物车、特价(限时不限量)\\
+		\midrule
+		多商品 & 7 & 多商品加价购、多商品满送商品、多商品满折、N元任选、套装价、多商品满件减、多商品满额减\\
+		\midrule
+		全场 & 3& 全场加价购、全场满送券、全场满额减\\
+		\midrule
+		特殊 & 2 & 拼团、众筹 \\
+		\bottomrule
+	\end{tabular}
+	\caption{长文本自动换行}
+	\label{tab:wf}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|c|c|c|}
+		\toprule
+		\multirow{2}*{姓名}
+		&\multicolumn{3}{c|}{成绩} \\ \cmidrule{2-4}
+		& 语文 & 数学 & 英语\\ 
+		\midrule
+		大明 & 97 & 99 & 80 \\ 
+		\midrule
+		王二 & 85 & 92 & 95 \\
+		\bottomrule
+	\end{tabular}
+	\caption{合并单元格}
+\end{table}
+	
+\section{定理和公式}
+	
+\newtheorem{theorem}{定理}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{definition}[theorem]{Definition}
+
+\begin{theorem}
+	给定任意的非负整数 $n$，我们有
+	$$(1+x)^n = \sum_{i=0}^n {n \choose i} x^i$$
+\end{theorem}
+
+\begin{theorem}
+	给定任意的集合 $A$，$B$ 和 $C$，我们有
+	$$ (A\cup B)-(C-A) = A \cup (B-C)$$
+\end{theorem}
+
+\begin{description}
+	\item [求和]
+	\begin{equation}
+		e^x = 1 + x + \frac{x^2}{2} + \frac{x^3}{6} + \cdots = \sum_{n\geq 0} \frac{x^n}{n!}
+	\end{equation}
+	\item[矩阵] 
+	\begin{equation}
+		\begin{bmatrix}
+			1 & x & 0 \\
+			0 & 1 & -1
+		\end{bmatrix}\begin{bmatrix}
+			1  \\
+			y  \\
+			1
+		\end{bmatrix}
+		=\begin{bmatrix}
+			1+xy  \\
+			y-1
+		\end{bmatrix}.
+	\end{equation}
+	
+	\item[分段函数] 
+	\[
+	|x|=\begin{cases}
+		x, & \text{if } x \geq 0,  \\
+		-x, & \text{if } x < 0.
+	\end{cases}
+	\]
+	
+	\item[积分]
+	\[
+	\tilde f(\omega)=\frac{1}{2\pi}
+	\int_{-\infty}^\infty f(x)e^{-i\omega x}, dx,
+	\]
+	
+\end{description}
+	
+\section{图象}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.4]{example-report-gfx/eg_dist}
+	\caption{报警次数的分布}
+\end{figure}
+
+\noindent
+多图组合
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}{0.4\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{example-report-gfx/eg_dist}
+		\caption{图1}
+		\label{fig:image1}
+	\end{subfigure}
+	\quad 
+	\begin{subfigure}{0.4\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{example-report-gfx/eg_dist}
+		\caption{图2}
+		\label{fig:image2}
+	\end{subfigure}
+	
+	\vspace{6pt}
+	
+	\begin{subfigure}{0.4\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{example-report-gfx/eg_dist}
+		\caption{图3}
+		\label{fig:image3}
+	\end{subfigure}
+	\quad
+	\begin{subfigure}{0.4\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{example-report-gfx/eg_dist}
+		\caption{图4}
+		\label{fig:image4}
+	\end{subfigure}
+	\caption{四张图}
+\end{figure}
+
+\noindent 旋转图片
+\begin{center}
+	\begin{tikzpicture}
+		\node[rotate=30] at (0,0) {\includegraphics[width=120pt]{example-report-gfx/eg_dist}};
+	\end{tikzpicture}
+\end{center}
+	
+	
+\section{Tikz 画图}
+
+用 Tikz 画的流程图。
+
+\input{example-report-gfx/eg_diagram}
+
+\section{字体样式}
+
+\begin{itemize}
+	\item \textbf{人爽事成}
+	\item \uline{划重点}
+	\item \uuline{重点是划两次} 
+	\item \uwave{波浪线是不是直线？}
+	\item \sout{删掉但是看得见}　
+	\item \xout{这就看得有点费劲了} 
+\end{itemize}
+
+\section{代码}
+
+\noindent 行内代码 \lstinline{$ cat /etc/shells} \\
+
+\noindent 命令行
+\begin{lstlisting}[language=Bash]
+$ cat /etc/shells
+\end{lstlisting}
+
+\begin{lstlisting}
+$ git pull [<options>] [<repository> [<refspec>…​]]
+\end{lstlisting}
+
+\vspace*{2ex}
+
+\noindent 代码块
+
+\begin{lstlisting}[language=Python, caption={Python 示例}]
+def factorial(n):  
+    # Returns the factorial of n. 
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+if __name__ == '__main__':
+    result = factorial(5)
+    print("The result is ", result)
+\end{lstlisting}
+
+
+\begin{lstlisting}[language=Java, caption={Java 示例}]
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+    }
+}
+\end{lstlisting}
+
+\begin{lstlisting}[caption={伪代码}, 
+	emph={[1]procedure, if, return, else, end}, 
+	emphstyle={[1]\color{blue}}, 
+	emph={[2]quickSort}, 
+	emphstyle={[2]\color{red}}]
+procedure quickSort(left, right)
+    if right-left <= 0
+        return
+    else     
+        pivot = A[right]
+        partition = partitionFunc(left, right, pivot)
+        quickSort(left,partition-1)
+        quickSort(partition+1,right)    
+    end if		
+end procedure
+\end{lstlisting}
+
+\section{文本框}
+
+朴素的文本框
+\begin{tcolorbox}[
+	colback=white, 
+	colframe=gray, 
+	sharp corners, 
+	leftrule={2pt}, rightrule={0.5pt}, toprule={0.5pt}, bottomrule={0.5pt}, 
+	left={2pt}, right={2pt}, top={3pt}, bottom={3pt}
+	]
+	tcolorbox 宏包是 Thomas F. Sturm 开发的一个用于绘制彩色文本框的宏包 tcolorbox 底层基于 pgf，功能也是十分强大。
+\end{tcolorbox}
+
+\noindent 带标题和颜色的文本框
+
+\begin{tcolorbox}[
+	colback=white, 
+	colframe=blue!15, 
+	sharp corners, 
+	coltitle=black, 
+	left={2pt}, right={2pt}, top={3pt}, bottom={3pt}, 
+	title = {注意事项}]
+	This is a \textbf{tcolorbox} with title.
+	\tcblower
+	Here, you see the lower part of the box.
+\end{tcolorbox}
+	
+\end{document}
