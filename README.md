@@ -18,9 +18,9 @@ This repository contains the following latex classes that I use for my documents
 
 <img src="https://github.com/xianqiu/latex-simple-styles/blob/master/previews/simplecv.jpg" width="300" />
 
-* Chinese: [example-simplecv-zh.pdf](https://github.com/xianqiu/latex-simple-styles/blob/master/previews/example-cv-zh.pdf) 
+* Chinese: [example-cv-zh.pdf](https://github.com/xianqiu/latex-simple-styles/blob/master/previews/example-cv-zh.pdf) 
 
-* English: [example-simplecv-en.pdf](https://github.com/xianqiu/latex-simple-styles/blob/master/previews/example-cv-en.pdf)
+* English: [example-cv-en.pdf](https://github.com/xianqiu/latex-simple-styles/blob/master/previews/example-cv-en.pdf)
 
 ### simplebeamer
 
