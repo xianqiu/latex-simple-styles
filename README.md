@@ -28,7 +28,7 @@ This repository contains the following latex classes that I use for my documents
 
 <img src="https://github.com/xianqiu/latex-simple-styles/blob/master/previews/simplebeamer2.jpg" width="300" />
 
-* [example-simplebeamer.pdf](https://github.com/xianqiu/latex-simple-styles/blob/master/previews/example-simplebeamer.pdf)
+* [example-simplebeamer.pdf](https://github.com/xianqiu/latex-simple-styles/blob/master/previews/example-beamer.pdf)
 
 ### simplereport
 
